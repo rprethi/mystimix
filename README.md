@@ -6,3 +6,11 @@ Mystimix offre une expérience interactive et immersive plongeant les joueurs da
 
 ## La proposition
 Le magicien se rend dans son sanctuaire et se lance dans l'exploration de la pièce. Un livre flotte sur le bureau situé au centre de la pièce. Une délimitation dans la salle permet de désactiver le flottement du livre. En même temps, une lumière s'allume et se projette sur le livre contenant les différentes recettes qu'il peut utiliser, qui donnent des résultats différents à chaque fois.
+
+## Moodboard visuel
+
+## Moodboard sonore
+
+## L'environnement virtuel
+
+## Schéma de programmation
