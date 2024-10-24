@@ -30,7 +30,7 @@ Le magicien se rend dans son sanctuaire et commence à explorer la pièce. Un li
 
 ## L'environnement virtuel
 
-## Schéma de programmation
+## Schéma d'interactivité
 ```mermaid
 graph TD;
     Début[Début du jeu]-->| Apparition dans le couloir |Menu[Menu avec les consignes apparait];
