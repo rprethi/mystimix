@@ -33,22 +33,30 @@ Le magicien se rend dans son sanctuaire et commence à explorer la pièce. Un li
 ## Schéma de programmation
 ```mermaid
 graph TD;
-    Début[Début du jeu]-->Menu[Menu avec les consignes apparait];
+    Début[Début du jeu]-->| Apparition dans le couloir |Menu[Menu avec les consignes apparait];
     Menu[Menu avec les consignes apparait]-->Chronomètre[Le chronomètre est démarré];
     Menu[Menu avec les consignes apparait]-->Lanternes[Les lanternes du couloir s’allument];
     Lanternes[Les lanternes du couloir s’allument]-->Déplacement[Déplacement du personnage];
     Chronomètre[Le chronomètre est démarré]-->Déplacement[Déplacement du personnage];
-    Lumières-->AmbianceLumineuse[Ambiance lumineuse];
-    Audio-->AmbianceBase[Ambiance de base];
-    Craquement-->Glace[Audio de la glace];
-    Vidéos-->Craquement[Craquement de la glace];
-    Vidéos-->Stable[Glacier];
-    Stable-->Interaction;
-    Glace-->Placement[Placement du joueur];
-    AmbianceLumineuse-->Placement[Placement du joueur];
-    AmbianceBase-->Placement[Placement du joueur];
-    Placement-->| Dans l'eau |Mort;
-    Placement-->| Sur le glacier |Survie;
-    Survie-->Interaction;
-    Mort-->Veille[Mode de veille];
+    Déplacement[Déplacement du personnage]-->|Audio|Bruit[Bruit de pas];
+    Déplacement[Déplacement du personnage]-->Zone1[Rentre dans la zone 1];
+    Déplacement[Déplacement du personnage]-->ExtérieurZone1[Reste en dehors de la zone 1];
+    ExtérieurZone1[Reste en dehors de la zone 1]-->Déplacement[Déplacement du personnage];
+    Bruit[Bruit de pas]-->Zone1[Rentre dans la zone 1 qui se trouve aux limites du tapis];
+    Zone1[Rentre dans la zone 1 qui se trouve aux limites du tapis]-->DéplacementLivre[Déplacement vertical du livre];
+    Zone1[Rentre dans la zone 1 qui se trouve aux limites du tapis]-->LumièreLivre[Un faisceau lumineux s'allume au dessus du livre];
+    LumièreLivre[Un faisceau lumineux s'allume au dessus du livre]-->Zone2[Rentre dans la zone 2 qui se trouve autours de la table];
+    DéplacementLivre[Déplacement vertical du livre]-->Zone2[Rentre dans la zone 2 qui se trouve autours de la table];
+    Zone2[Rentre dans la zone 2 qui se trouve autours de la table]-->ArrêtDéplacementLivre[Arrêt du déplacement vertical du livre];
+    Zone2[Rentre dans la zone 2 qui se trouve autours de la table]-->CouleurLumièreLivre[Le faisceau lumineux au dessus du livre change de couleur];
+    Zone2[Rentre dans la zone 2 qui se trouve autours de la table]-->Recette[La recette apparait dans le livre];
+    ArrêtDéplacementLivre[Arrêt du déplacement vertical du livre]-->DéplacementIngrédients[Déplacement du personnage pour prendre ingrédients];
+    CouleurLumièreLivre[Le faisceau lumineux au dessus du livre change de couleur]-->DéplacementIngrédients[Déplacement du personnage pour prendre ingrédients];
+    Recette[La recette apparait dans le livre]-->DéplacementIngrédients[Déplacement du personnage pour prendre ingrédients];
+    DéplacementIngrédients[Déplacement du personnage pour prendre ingrédients]-->| Les ingrédients sont dans le panier. |IngrédientsChaudron[Les 3 ingrédients sont mis dans le chaudron];
+    IngrédientsChaudron[Les 3 ingrédients sont mis dans le chaudron]-->| La cuillère tourne toute seule dans le chaudron. |MélangeIngrédients[Mélange des ingrédents et apparition du résultat];
+    MélangeIngrédients[Mélange des ingrédents et apparition du résultat]-->| La 3e recette est terminée |ArrêtChronomètre[Le chronomètre s'arrête];
+    MélangeIngrédients[Mélange des ingrédents et apparition du résultat]-->| La 3e recette n'est pas encore réalisée |Page[La page tourne];
+    Page[La page tourne]-->Recette[La recette apparait dans le livre];
+    ArrêtChronomètre[Le chronomètre s'arrête]-->Début[Début du jeu];
 ```
