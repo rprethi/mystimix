@@ -31,3 +31,24 @@ Le magicien se rend dans son sanctuaire et commence à explorer la pièce. Un li
 ## L'environnement virtuel
 
 ## Schéma de programmation
+```mermaid
+graph TD;
+    Début[Début du jeu]-->Menu[Menu avec les consignes apparait];
+    Menu[Menu avec les consignes apparait]-->Chronomètre[Le chronomètre est démarré];
+    Menu[Menu avec les consignes apparait]-->Lanternes[Les lanternes du couloir s’allument];
+    Lanternes[Les lanternes du couloir s’allument]-->Déplacement[Déplacement du personnage];
+    Chronomètre[Le chronomètre est démarré]-->Déplacement[Déplacement du personnage];
+    Lumières-->AmbianceLumineuse[Ambiance lumineuse];
+    Audio-->AmbianceBase[Ambiance de base];
+    Craquement-->Glace[Audio de la glace];
+    Vidéos-->Craquement[Craquement de la glace];
+    Vidéos-->Stable[Glacier];
+    Stable-->Interaction;
+    Glace-->Placement[Placement du joueur];
+    AmbianceLumineuse-->Placement[Placement du joueur];
+    AmbianceBase-->Placement[Placement du joueur];
+    Placement-->| Dans l'eau |Mort;
+    Placement-->| Sur le glacier |Survie;
+    Survie-->Interaction;
+    Mort-->Veille[Mode de veille];
+```
