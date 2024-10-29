@@ -29,6 +29,7 @@ Le magicien se rend dans son sanctuaire et commence à explorer la pièce. Un li
 <iframe width="560" height="1080" src="https://www.youtube.com/embed/Ppi5T6TxUSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## L'environnement virtuel
+    ![image](https://github.com/user-attachments/assets/8d110906-21e1-4747-9962-9132393798b0)
 
 ## Schéma d'interactivité
 ```mermaid
