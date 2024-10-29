@@ -17,16 +17,16 @@ Le magicien se rend dans son sanctuaire et commence à explorer la pièce. Un li
 ## Moodboard sonore
 ---
 
-<iframe width="560" height="1080" src="https://www.youtube.com/embed/h1Dd3F5EBJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/h1Dd3F5EBJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="1080" src="https://www.youtube.com/embed/K3Q4F8sWBBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/K3Q4F8sWBBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="1080" src="https://www.youtube.com/embed/f_5BxlzgkDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/f_5BxlzgkDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="1080" src="https://www.youtube.com/embed/hKjD8whqeK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/hKjD8whqeK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-<iframe width="560" height="1080" src="https://www.youtube.com/embed/Ppi5T6TxUSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/Ppi5T6TxUSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## L'environnement virtuel
 ![image](https://github.com/user-attachments/assets/66863f1c-1b0b-428a-82ae-89017d3831c6)
